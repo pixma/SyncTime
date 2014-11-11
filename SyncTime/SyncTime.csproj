@@ -1,0 +1,722 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19E8171E-DA2F-40E9-B784-3216AA4C0AFB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SyncTime</RootNamespace>
+    <AssemblyName>SyncTime</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SyncTime.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1 %28187%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\winforms-modernui\MetroFramework\bin\Release\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\winforms-modernui\MetroFramework.Design\bin\Release\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\winforms-modernui\MetroFramework.Fonts\bin\Release\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.Ribbon35">
+      <HintPath>C:\Users\Annim\Downloads\SourceCode\SourceCode\System.Windows.Forms.Ribbon\bin\Release\System.Windows.Forms.Ribbon35.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %282%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %283%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %284%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %285%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %286%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %287%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %288%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %289%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2810%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2811%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2812%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2813%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2814%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2815%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2816%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2817%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2818%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2819%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2820%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2821%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2822%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2823%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2824%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2825%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2826%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2827%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2828%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2829%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2830%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2831%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2832%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2833%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2834%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2835%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2836%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2837%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2838%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2839%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2840%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2841%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2842%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2843%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2844%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2845%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2846%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2847%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2848%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2849%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2850%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2851%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2852%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2853%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2854%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2855%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2856%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2857%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2858%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2859%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2860%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2861%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2862%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2863%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2864%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2865%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2866%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2867%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2868%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2869%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2870%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2871%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2872%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2873%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2874%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2875%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2876%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2877%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2878%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2879%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2880%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2881%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2882%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2883%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2884%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2885%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2886%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2887%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2888%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2889%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2890%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2891%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2892%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2893%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2894%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2895%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2896%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2897%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2898%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %2899%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28100%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28101%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28102%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28103%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28104%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28105%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28106%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28107%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28108%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28109%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28110%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28111%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28112%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28113%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28114%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28115%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28116%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28117%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28118%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28119%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28120%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28121%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28122%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28123%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28124%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28125%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28126%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28127%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28128%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28129%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28130%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28131%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28132%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28133%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28134%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28135%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28136%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28137%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28138%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28139%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28140%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28141%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28142%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28143%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28144%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28145%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28146%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28147%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28148%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28149%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28150%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28151%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28152%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28153%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28154%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28155%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28156%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28157%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28158%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28159%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28160%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28161%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28162%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28163%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28164%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28165%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28166%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28167%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28168%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28169%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28170%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28171%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28172%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28173%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28174%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28175%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28176%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28177%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28178%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28179%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28180%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28181%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28182%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28183%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28184%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28185%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28186%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28187%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28188%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28189%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28190%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28191%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28192%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28193%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28194%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28195%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28196%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28197%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28198%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28199%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28200%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28201%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28202%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1 %28203%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Icons\1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1 %28187%29.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

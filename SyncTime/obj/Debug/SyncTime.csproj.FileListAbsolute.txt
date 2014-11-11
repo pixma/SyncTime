@@ -1,0 +1,16 @@
+D:\SyncTime\SyncTime\bin\Debug\SyncTime.exe.config
+D:\SyncTime\SyncTime\bin\Debug\SyncTime.exe
+D:\SyncTime\SyncTime\bin\Debug\SyncTime.pdb
+D:\SyncTime\SyncTime\bin\Debug\System.Windows.Forms.Ribbon35.dll
+D:\SyncTime\SyncTime\bin\Debug\System.Windows.Forms.Ribbon35.pdb
+D:\SyncTime\SyncTime\obj\Debug\SyncTime.Properties.Resources.resources
+D:\SyncTime\SyncTime\obj\Debug\SyncTime.csproj.GenerateResource.Cache
+D:\SyncTime\SyncTime\obj\Debug\SyncTime.exe
+D:\SyncTime\SyncTime\obj\Debug\SyncTime.pdb
+D:\SyncTime\SyncTime\obj\Debug\SyncTime.WindowForm.resources
+D:\SyncTime\SyncTime\bin\Debug\MetroFramework.Design.dll
+D:\SyncTime\SyncTime\bin\Debug\MetroFramework.dll
+D:\SyncTime\SyncTime\bin\Debug\MetroFramework.Fonts.dll
+D:\SyncTime\SyncTime\bin\Debug\MetroFramework.Design.pdb
+D:\SyncTime\SyncTime\bin\Debug\MetroFramework.Fonts.pdb
+D:\SyncTime\SyncTime\obj\Debug\SyncTime.csprojResolveAssemblyReference.cache

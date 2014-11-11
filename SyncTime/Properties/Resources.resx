@@ -1,0 +1,733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="1 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (1).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (2).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (3).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (4).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (5).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (6).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (7).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (8).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (9)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (9).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (10)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (10).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (11)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (11).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (12)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (12).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (13)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (13).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (14)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (14).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (15)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (15).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (16)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (16).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (17)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (17).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (18)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (18).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (19)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (19).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (20)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (20).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (21)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (21).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (22)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (22).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (23)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (23).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (24)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (24).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (25)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (25).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (26)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (26).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (27)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (27).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (28)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (28).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (29)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (29).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (30)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (30).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (31)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (31).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (32)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (32).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (33)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (33).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (34)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (34).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (35)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (35).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (36)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (36).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (37)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (37).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (38)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (38).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (39)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (39).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (40)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (40).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (41)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (41).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (42)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (42).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (43)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (43).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (44)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (44).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (45)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (45).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (46)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (46).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (47)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (47).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (48)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (48).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (49)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (49).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (50)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (50).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (51)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (51).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (52)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (52).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (53)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (53).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (54)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (54).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (55)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (55).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (56)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (56).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (57)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (57).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (58)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (58).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (59)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (59).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (60)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (60).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (61)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (61).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (62)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (62).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (63)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (63).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (64)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (64).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (65)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (65).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (66)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (66).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (67)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (67).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (68)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (68).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (69)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (69).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (70)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (70).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (71)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (71).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (72)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (72).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (73)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (73).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (74)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (74).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (75)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (75).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (76)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (76).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (77)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (77).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (78)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (78).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (79)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (79).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (80)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (80).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (81)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (81).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (82)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (82).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (83)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (83).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (84)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (84).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (85)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (85).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (86)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (86).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (87)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (87).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (88)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (88).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (89)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (89).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (90)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (90).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (91)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (91).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (92)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (92).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (93)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (93).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (94)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (94).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (95)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (95).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (96)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (96).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (97)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (97).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (98)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (98).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (99)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (99).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (100)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (100).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (101)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (101).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (102)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (102).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (103)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (103).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (104)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (104).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (105)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (105).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (106)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (106).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (107)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (107).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (108)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (108).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (109)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (109).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (110)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (110).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (111)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (111).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (112)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (112).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (113)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (113).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (114)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (114).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (115)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (115).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (116)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (116).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (117)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (117).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (118)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (118).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (119)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (119).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (120)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (120).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (121)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (121).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (122)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (122).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (123)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (123).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (124)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (124).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (125)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (125).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (126)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (126).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (127)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (127).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (128)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (128).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (129)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (129).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (130)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (130).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (131)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (131).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (132)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (132).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (133)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (133).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (134)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (134).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (135)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (135).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (136)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (136).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (137)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (137).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (138)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (138).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (139)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (139).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (140)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (140).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (141)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (141).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (142)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (142).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (143)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (143).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (144)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (144).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (145)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (145).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (146)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (146).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (147)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (147).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (148)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (148).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (149)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (149).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (150)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (150).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (151)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (151).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (152)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (152).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (153)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (153).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (154)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (154).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (155)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (155).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (156)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (156).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (157)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (157).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (158)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (158).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (159)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (159).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (160)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (160).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (161)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (161).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (162)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (162).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (163)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (163).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (164)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (164).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (165)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (165).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (166)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (166).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (167)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (167).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (168)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (168).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (169)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (169).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (170)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (170).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (171)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (171).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (172)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (172).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (173)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (173).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (174)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (174).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (175)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (175).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (176)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (176).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (177)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (177).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (178)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (178).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (179)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (179).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (180)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (180).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (181)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (181).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (182)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (182).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (183)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (183).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (184)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (184).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (185)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (185).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (186)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (186).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (187)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (187).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (188)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (188).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (189)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (189).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (190)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (190).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (191)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (191).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (192)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (192).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (193)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (193).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (194)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (194).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (195)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (195).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (196)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (196).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (197)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (197).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (198)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (198).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (199)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (199).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (200)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (200).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (201)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (201).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (202)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (202).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 (203)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1 (203).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office Icons\1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
