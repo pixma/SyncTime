@@ -12,3 +12,5 @@ D:\SyncTime\SyncTime\obj\Release\SyncTime.Properties.Resources.resources
 D:\SyncTime\SyncTime\obj\Release\SyncTime.csproj.GenerateResource.Cache
 D:\SyncTime\SyncTime\obj\Release\SyncTime.exe
 D:\SyncTime\SyncTime\obj\Release\SyncTime.pdb
+D:\SyncTime\SyncTime\bin\Release\MetroFramework.Design.dll
+D:\SyncTime\SyncTime\bin\Release\MetroFramework.Design.pdb

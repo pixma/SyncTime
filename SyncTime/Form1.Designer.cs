@@ -29,17 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WindowForm));
             this.WindowRibbon = new System.Windows.Forms.Ribbon();
             this.ribbonTabActivity = new System.Windows.Forms.RibbonTab();
             this.ribbonPanelTimeTrack = new System.Windows.Forms.RibbonPanel();
             this.ribbonButtonStartTracking = new System.Windows.Forms.RibbonButton();
             this.ribbonButtonStopTracking = new System.Windows.Forms.RibbonButton();
+            this.ribbonButtonPauseResume = new System.Windows.Forms.RibbonButton();
             this.ribbonPanelTime = new System.Windows.Forms.RibbonPanel();
             this.ribbonLabelTime = new System.Windows.Forms.RibbonLabel();
+            this.ribbonPanelEdit = new System.Windows.Forms.RibbonPanel();
+            this.ribbonButtonActivityUp = new System.Windows.Forms.RibbonButton();
+            this.ribbonButtonActivityDown = new System.Windows.Forms.RibbonButton();
+            this.ribbonButtonDeleteActivity = new System.Windows.Forms.RibbonButton();
             this.toolTipComp = new System.Windows.Forms.ToolTip(this.components);
             this.metroTextBoxActivityName = new MetroFramework.Controls.MetroTextBox();
             this.splitContainerMainWindow = new System.Windows.Forms.SplitContainer();
@@ -49,11 +54,6 @@
             this.metroGridWindow = new MetroFramework.Controls.MetroGrid();
             this.ribbonSeparator1 = new System.Windows.Forms.RibbonSeparator();
             this.ribbonPanelStatus = new System.Windows.Forms.RibbonPanel();
-            this.ribbonPanelEdit = new System.Windows.Forms.RibbonPanel();
-            this.ribbonButtonActivityUp = new System.Windows.Forms.RibbonButton();
-            this.ribbonButtonActivityDown = new System.Windows.Forms.RibbonButton();
-            this.ribbonButtonDeleteActivity = new System.Windows.Forms.RibbonButton();
-            this.ribbonButtonPauseResume = new System.Windows.Forms.RibbonButton();
             this.timerCounting = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerMainWindow)).BeginInit();
             this.splitContainerMainWindow.Panel1.SuspendLayout();
@@ -91,6 +91,7 @@
             this.WindowRibbon.Tabs.Add(this.ribbonTabActivity);
             this.WindowRibbon.TabsMargin = new System.Windows.Forms.Padding(12, 2, 20, 0);
             this.WindowRibbon.Text = "AppRibbon";
+            this.WindowRibbon.ThemeColor = System.Windows.Forms.RibbonTheme.Blue;
             // 
             // ribbonTabActivity
             // 
@@ -122,6 +123,16 @@
             this.ribbonButtonStopTracking.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
             this.ribbonButtonStopTracking.SmallImage = global::SyncTime.Properties.Resources._1__149_;
             this.ribbonButtonStopTracking.Text = "Stop Tracking";
+            this.ribbonButtonStopTracking.Click += new System.EventHandler(this.ribbonButtonStopTracking_Click);
+            // 
+            // ribbonButtonPauseResume
+            // 
+            this.ribbonButtonPauseResume.Enabled = false;
+            this.ribbonButtonPauseResume.Image = global::SyncTime.Properties.Resources._1__74_;
+            this.ribbonButtonPauseResume.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
+            this.ribbonButtonPauseResume.SmallImage = global::SyncTime.Properties.Resources._1__74_;
+            this.ribbonButtonPauseResume.Text = "Pause Tracking";
+            this.ribbonButtonPauseResume.Click += new System.EventHandler(this.ribbonButtonPauseResume_Click);
             // 
             // ribbonPanelTime
             // 
@@ -133,6 +144,40 @@
             // 
             this.ribbonLabelTime.Enabled = false;
             this.ribbonLabelTime.Text = "Time/Date : 00:00:00";
+            // 
+            // ribbonPanelEdit
+            // 
+            this.ribbonPanelEdit.Items.Add(this.ribbonButtonActivityUp);
+            this.ribbonPanelEdit.Items.Add(this.ribbonButtonActivityDown);
+            this.ribbonPanelEdit.Items.Add(this.ribbonButtonDeleteActivity);
+            this.ribbonPanelEdit.Text = "Edit";
+            // 
+            // ribbonButtonActivityUp
+            // 
+            this.ribbonButtonActivityUp.Enabled = false;
+            this.ribbonButtonActivityUp.Image = global::SyncTime.Properties.Resources._1__73_;
+            this.ribbonButtonActivityUp.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
+            this.ribbonButtonActivityUp.SmallImage = global::SyncTime.Properties.Resources._1__73_;
+            this.ribbonButtonActivityUp.Text = "Up";
+            this.ribbonButtonActivityUp.Click += new System.EventHandler(this.ribbonButtonActivityUp_Click);
+            // 
+            // ribbonButtonActivityDown
+            // 
+            this.ribbonButtonActivityDown.Enabled = false;
+            this.ribbonButtonActivityDown.Image = global::SyncTime.Properties.Resources._1__88_;
+            this.ribbonButtonActivityDown.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
+            this.ribbonButtonActivityDown.SmallImage = global::SyncTime.Properties.Resources._1__88_;
+            this.ribbonButtonActivityDown.Text = "Down";
+            this.ribbonButtonActivityDown.Click += new System.EventHandler(this.ribbonButtonActivityDown_Click);
+            // 
+            // ribbonButtonDeleteActivity
+            // 
+            this.ribbonButtonDeleteActivity.Enabled = false;
+            this.ribbonButtonDeleteActivity.Image = global::SyncTime.Properties.Resources._1__145_;
+            this.ribbonButtonDeleteActivity.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
+            this.ribbonButtonDeleteActivity.SmallImage = global::SyncTime.Properties.Resources._1__145_;
+            this.ribbonButtonDeleteActivity.Text = "Delete";
+            this.ribbonButtonDeleteActivity.Click += new System.EventHandler(this.ribbonButtonDeleteActivity_Click);
             // 
             // metroTextBoxActivityName
             // 
@@ -167,6 +212,7 @@
             this.splitContainerMainWindow.Size = new System.Drawing.Size(660, 212);
             this.splitContainerMainWindow.SplitterDistance = 154;
             this.splitContainerMainWindow.TabIndex = 1;
+            this.splitContainerMainWindow.EnabledChanged += new System.EventHandler(this.splitContainerMainWindow_EnabledChanged);
             // 
             // tableLayoutPanel1
             // 
@@ -217,23 +263,23 @@
             this.metroGridWindow.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.metroGridWindow.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGridWindow.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGridWindow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGridWindow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.metroGridWindow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGridWindow.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGridWindow.DefaultCellStyle = dataGridViewCellStyle2;
             this.metroGridWindow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroGridWindow.EnableHeadersVisualStyles = false;
             this.metroGridWindow.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -242,14 +288,14 @@
             this.metroGridWindow.MultiSelect = false;
             this.metroGridWindow.Name = "metroGridWindow";
             this.metroGridWindow.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGridWindow.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGridWindow.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.metroGridWindow.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGridWindow.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGridWindow.Size = new System.Drawing.Size(502, 212);
@@ -261,48 +307,6 @@
             // ribbonPanelStatus
             // 
             this.ribbonPanelStatus.Text = null;
-            // 
-            // ribbonPanelEdit
-            // 
-            this.ribbonPanelEdit.Items.Add(this.ribbonButtonActivityUp);
-            this.ribbonPanelEdit.Items.Add(this.ribbonButtonActivityDown);
-            this.ribbonPanelEdit.Items.Add(this.ribbonButtonDeleteActivity);
-            this.ribbonPanelEdit.Text = "Edit";
-            // 
-            // ribbonButtonActivityUp
-            // 
-            this.ribbonButtonActivityUp.Enabled = false;
-            this.ribbonButtonActivityUp.Image = global::SyncTime.Properties.Resources._1__73_;
-            this.ribbonButtonActivityUp.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
-            this.ribbonButtonActivityUp.SmallImage = global::SyncTime.Properties.Resources._1__73_;
-            this.ribbonButtonActivityUp.Text = "Up";
-            this.ribbonButtonActivityUp.Click += new System.EventHandler(this.ribbonButtonActivityUp_Click);
-            // 
-            // ribbonButtonActivityDown
-            // 
-            this.ribbonButtonActivityDown.Enabled = false;
-            this.ribbonButtonActivityDown.Image = global::SyncTime.Properties.Resources._1__88_;
-            this.ribbonButtonActivityDown.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
-            this.ribbonButtonActivityDown.SmallImage = global::SyncTime.Properties.Resources._1__88_;
-            this.ribbonButtonActivityDown.Text = "Down";
-            this.ribbonButtonActivityDown.Click += new System.EventHandler(this.ribbonButtonActivityDown_Click);
-            // 
-            // ribbonButtonDeleteActivity
-            // 
-            this.ribbonButtonDeleteActivity.Enabled = false;
-            this.ribbonButtonDeleteActivity.Image = global::SyncTime.Properties.Resources._1__145_;
-            this.ribbonButtonDeleteActivity.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
-            this.ribbonButtonDeleteActivity.SmallImage = global::SyncTime.Properties.Resources._1__145_;
-            this.ribbonButtonDeleteActivity.Text = "Delete";
-            this.ribbonButtonDeleteActivity.Click += new System.EventHandler(this.ribbonButtonDeleteActivity_Click);
-            // 
-            // ribbonButtonPauseResume
-            // 
-            this.ribbonButtonPauseResume.Enabled = false;
-            this.ribbonButtonPauseResume.Image = global::SyncTime.Properties.Resources._1__74_;
-            this.ribbonButtonPauseResume.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
-            this.ribbonButtonPauseResume.SmallImage = global::SyncTime.Properties.Resources._1__74_;
-            this.ribbonButtonPauseResume.Text = "Pause Tracking";
             // 
             // timerCounting
             // 
