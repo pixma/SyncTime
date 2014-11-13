@@ -325,6 +325,7 @@
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.DropShadow;
             this.Style = MetroFramework.MetroColorStyle.Red;
             this.Text = "AppName";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.WindowForm_FormClosing);
             this.Load += new System.EventHandler(this.WindowForm_Load);
             this.splitContainerMainWindow.Panel1.ResumeLayout(false);
             this.splitContainerMainWindow.Panel2.ResumeLayout(false);

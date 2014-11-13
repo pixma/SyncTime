@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using MetroFramework.Forms;
+using DocumentFormat.OpenXml.Packaging;
+using DocumentFormat.OpenXml.Spreadsheet;
+using DocumentFormat.OpenXml;
 
 namespace SyncTime
 {
@@ -312,6 +315,30 @@ namespace SyncTime
             ribbonButtonPauseResume.Text = "Resume Tracking";
             
 
+        }
+
+        private void WindowForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // all data shall be saved on one excel file. will be overwritten.
+            SpreadsheetDocument sshtDoc = SpreadsheetDocument.Create("history.xls", SpreadsheetDocumentType.Workbook);
+            WorkbookPart workBook = sshtDoc.AddWorkbookPart();
+            workBook.Workbook = new Workbook();
+
+            // Add a WorksheetPart to the WorkbookPart.
+            WorksheetPart worksheetPart = workBook.AddNewPart<WorksheetPart>();
+            worksheetPart.Worksheet = new Worksheet(new SheetData());
+
+            // Add Sheets to the Workbook.
+            Sheets sheets = sshtDoc.WorkbookPart.Workbook.AppendChild<Sheets>(new Sheets());
+
+            // Append a new worksheet and associate it with the workbook.
+            Sheet sheet = new Sheet() { Id = sshtDoc.WorkbookPart.GetIdOfPart(worksheetPart), SheetId = 1, Name = "mySheet" };
+            sheets.Append(sheet);
+
+            workBook.Workbook.Save();
+
+            // Close the document.
+            sshtDoc.Close();
         }
     }
 }

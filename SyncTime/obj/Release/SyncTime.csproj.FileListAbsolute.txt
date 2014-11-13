@@ -14,3 +14,4 @@ D:\SyncTime\SyncTime\obj\Release\SyncTime.exe
 D:\SyncTime\SyncTime\obj\Release\SyncTime.pdb
 D:\SyncTime\SyncTime\bin\Release\MetroFramework.Design.dll
 D:\SyncTime\SyncTime\bin\Release\MetroFramework.Design.pdb
+D:\SyncTime\SyncTime\bin\Release\DocumentFormat.OpenXml.dll
